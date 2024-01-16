@@ -1,0 +1,211 @@
+node: 'if'
+task0:
+  in_spike_bits: 8
+  time_step: 4
+  pooling_type: 'none'
+  res_connect: 'none'
+  shortcut_spike_bits: 0
+  spike_acc: 'disabled'
+  vmem_out: 'disabled'
+  conv_cfg:
+    in_channels: 2
+    out_channels: 16
+    img_height: 48
+    img_width: 48
+    kernel_height: 3
+    kernel_width: 3
+    stride_height: 1
+    stride_width: 1
+    pad_height: 1
+    pad_width: 1
+    dilate_height: 1
+    dilate_width: 1
+task1:
+  in_spike_bits: 1
+  time_step: 4
+  pooling_type: 'none'
+  res_connect: 'none'
+  shortcut_spike_bits: 0
+  spike_acc: 'disabled'
+  vmem_out: 'disabled'
+  conv_cfg:
+    in_channels: 16
+    out_channels: 64
+    img_height: 48
+    img_width: 48
+    kernel_height: 3
+    kernel_width: 3
+    stride_height: 1
+    stride_width: 1
+    pad_height: 1
+    pad_width: 1
+    dilate_height: 1
+    dilate_width: 1
+task2:
+  in_spike_bits: 1
+  time_step: 4
+  pooling_type: 'maxpool'
+  res_connect: 'none'
+  shortcut_spike_bits: 0
+  spike_acc: 'disabled'
+  vmem_out: 'disabled'
+  conv_cfg:
+    in_channels: 64
+    out_channels: 64
+    img_height: 48
+    img_width: 48
+    kernel_height: 3
+    kernel_width: 3
+    stride_height: 1
+    stride_width: 1
+    pad_height: 1
+    pad_width: 1
+    dilate_height: 1
+    dilate_width: 1
+task3:
+  in_spike_bits: 1
+  time_step: 4
+  pooling_type: 'none'
+  res_connect: 'none'
+  shortcut_spike_bits: 0
+  spike_acc: 'disabled'
+  vmem_out: 'disabled'
+  conv_cfg:
+    in_channels: 64
+    out_channels: 128
+    img_height: 24
+    img_width: 24
+    kernel_height: 3
+    kernel_width: 3
+    stride_height: 1
+    stride_width: 1
+    pad_height: 1
+    pad_width: 1
+    dilate_height: 1
+    dilate_width: 1
+task4:
+  in_spike_bits: 1
+  time_step: 4
+  pooling_type: 'maxpool'
+  res_connect: 'none'
+  shortcut_spike_bits: 0
+  spike_acc: 'disabled'
+  vmem_out: 'disabled'
+  conv_cfg:
+    in_channels: 128
+    out_channels: 128
+    img_height: 24
+    img_width: 24
+    kernel_height: 3
+    kernel_width: 3
+    stride_height: 1
+    stride_width: 1
+    pad_height: 1
+    pad_width: 1
+    dilate_height: 1
+    dilate_width: 1
+task5:
+  in_spike_bits: 1
+  time_step: 4
+  pooling_type: 'none'
+  res_connect: 'none'
+  shortcut_spike_bits: 0
+  spike_acc: 'disabled'
+  vmem_out: 'disabled'
+  conv_cfg:
+    in_channels: 128
+    out_channels: 256
+    img_height: 12
+    img_width: 12
+    kernel_height: 3
+    kernel_width: 3
+    stride_height: 1
+    stride_width: 1
+    pad_height: 1
+    pad_width: 1
+    dilate_height: 1
+    dilate_width: 1
+task6:
+  in_spike_bits: 1
+  time_step: 4
+  pooling_type: 'maxpool'
+  res_connect: 'none'
+  shortcut_spike_bits: 0
+  spike_acc: 'disabled'
+  vmem_out: 'disabled'
+  conv_cfg:
+    in_channels: 256
+    out_channels: 256
+    img_height: 12
+    img_width: 12
+    kernel_height: 3
+    kernel_width: 3
+    stride_height: 1
+    stride_width: 1
+    pad_height: 1
+    pad_width: 1
+    dilate_height: 1
+    dilate_width: 1
+task7:
+  in_spike_bits: 1
+  time_step: 4
+  pooling_type: 'none'
+  res_connect: 'none'
+  shortcut_spike_bits: 0
+  spike_acc: 'disabled'
+  vmem_out: 'disabled'
+  conv_cfg:
+    in_channels: 256
+    out_channels: 512
+    img_height: 6
+    img_width: 6
+    kernel_height: 3
+    kernel_width: 3
+    stride_height: 1
+    stride_width: 1
+    pad_height: 1
+    pad_width: 1
+    dilate_height: 1
+    dilate_width: 1
+task8:
+  in_spike_bits: 1
+  time_step: 4
+  pooling_type: 'maxpool'
+  res_connect: 'none'
+  shortcut_spike_bits: 0
+  spike_acc: 'disabled'
+  vmem_out: 'disabled'
+  conv_cfg:
+    in_channels: 512
+    out_channels: 512
+    img_height: 6
+    img_width: 6
+    kernel_height: 3
+    kernel_width: 3
+    stride_height: 1
+    stride_width: 1
+    pad_height: 1
+    pad_width: 1
+    dilate_height: 1
+    dilate_width: 1
+task9:
+  in_spike_bits: 1
+  time_step: 4
+  pooling_type: 'none'
+  res_connect: 'none'
+  shortcut_spike_bits: 0
+  spike_acc: 'disabled'
+  vmem_out: 'enabled'
+  conv_cfg:
+    in_channels: 512
+    out_channels: 11
+    img_height: 3
+    img_width: 3
+    kernel_height: 3
+    kernel_width: 3
+    stride_height: 1
+    stride_width: 1
+    pad_height: 0
+    pad_width: 0
+    dilate_height: 1
+    dilate_width: 1

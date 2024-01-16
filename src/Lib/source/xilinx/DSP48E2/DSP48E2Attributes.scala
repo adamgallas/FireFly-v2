@@ -1,0 +1,47 @@
+package xilinx.DSP48E2
+
+class DSP48E2Attributes() {
+
+  var A_INPUT = "DIRECT"
+  var B_INPUT = "DIRECT"
+  var AMULTSEL = "A"
+  var BMULTSEL = "B"
+  var PREADDINSEL = "A"
+
+  var USE_MULT = "MULTIPLY"
+  var USE_SIMD = "ONE48"
+
+  var AREG, BREG, CREG, DREG, ADREG, MREG, PREG = 1
+  var ACASCREG, BCASCREG = 1
+  var CARRYINREG, CARRYINSELREG = 1
+  var INMODEREG, OPMODEREG, ALUMODEREG = 1
+
+  def generics = Seq(
+    "A_INPUT" -> A_INPUT,
+    "B_INPUT" -> B_INPUT,
+    "AMULTSEL" -> AMULTSEL,
+    "BMULTSEL" -> BMULTSEL,
+    "PREADDINSEL" -> PREADDINSEL,
+
+    "USE_MULT" -> USE_MULT,
+    "USE_SIMD" -> USE_SIMD,
+
+    "AREG" -> AREG,
+    "BREG" -> BREG,
+    "CREG" -> CREG,
+    "DREG" -> DREG,
+    "ADREG" -> ADREG,
+    "MREG" -> MREG,
+    "PREG" -> PREG,
+
+    "ACASCREG" -> ACASCREG,
+    "BCASCREG" -> BCASCREG,
+
+    "CARRYINREG" -> CARRYINREG,
+    "CARRYINSELREG" -> CARRYINSELREG,
+
+    "INMODEREG" -> INMODEREG,
+    "OPMODEREG" -> OPMODEREG,
+    "ALUMODEREG" -> ALUMODEREG
+  )
+}

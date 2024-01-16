@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="sbt 1" modules="FireFlyv2">
+      <parameters>
+        <parameter value="-target:jvm-1.8" />
+      </parameters>
+      <plugins>
+        <plugin path="C:\Users\adam_\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\github\spinalhdl\spinalhdl-idsl-plugin_2.11\1.9.0\spinalhdl-idsl-plugin_2.11-1.9.0.jar" />
+      </plugins>
+    </profile>
+  </component>
+</project>
