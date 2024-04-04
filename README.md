@@ -1,6 +1,6 @@
 ## FireFly v2: Advancing Hardware Support for High-Performance Spiking Neural Network with a Spatiotemporal FPGA Accelerator
 
-This repository contains the source code for the paper "FireFly v2: Advancing Hardware Support for High-Performance Spiking Neural Network with a Spatiotemporal FPGA Accelerator".
+This repository contains the source code for the paper "FireFly v2: Advancing Hardware Support for High-Performance Spiking Neural Network with a Spatiotemporal FPGA Accelerator". The paper is available [here](https://ieeexplore.ieee.org/abstract/document/10478105/).
 
 ### Citation
 
