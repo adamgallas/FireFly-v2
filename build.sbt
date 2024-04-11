@@ -23,6 +23,7 @@ val snakeYaml = "org.yaml" % "snakeyaml" % "1.33"
 
 lazy val FireFlyv2 = (project in file("."))
   .settings(
+    Compile / scalaSource := baseDirectory.value / "src",
     name := "FireFlyv2",
     libraryDependencies ++= Seq(spinalCore, spinalLib, spinalIdslPlugin),
     libraryDependencies += "org.scalanlp" %% "breeze" % "1.0", // for numeric & matrix operations
